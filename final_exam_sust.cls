@@ -1,10 +1,14 @@
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{final_exam_sust}
 \LoadClass[legalpaper,11pt]{exam}
 
 %\RequirePackage[margin = 2cm]{geometry}
 \RequirePackage[top=0.8cm, bottom=1.6cm, left=2cm, right=2cm]{geometry}
+
+
+
+
+
 \RequirePackage{advdate}
 
 \RequirePackage[latin1]{inputenc}
@@ -36,9 +40,7 @@
 \RequirePackage[euler]{textgreek}
 \RequirePackage{pgfplots}
 
-%\usetikzlibrary{shapes,arrows}
 
-%\RequirePackage{tikzexternal}
 
 \RequirePackage{tabularx}
 
@@ -61,9 +63,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\footer{\tiny{}}{\tiny{\examdate}}{\tiny{Page \thepage}}
+%\footer{\tiny{}}{\tiny{\examdate}}{\tiny{Page \thepage}}
+\footer{\textit{\tiny {}}}{\textit{\tiny \examdate}}{\textit{\tiny Page \thepage}}
 
 
 
 \usetikzlibrary{decorations.pathreplacing}
 \captionsetup{figurename=Fig.}
+
+
+
+
+
+\renewcommand{\subpartlabel}{(\thesubpart)}  % wrap it in parentheses, no dot
+
+% Define an inline subparts environment
+\newlist{inlinesubparts}{enumerate*}{1}
+\setlist[inlinesubparts]{label=(\roman*), itemjoin={{, }}, itemjoin*={{, and }}}
