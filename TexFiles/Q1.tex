@@ -4,13 +4,13 @@
 \question 
 \begin{parts}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\part[$2$] \color{red}If you want to put two or more figures side by side then you can use the latex minipage environment.\color{black} What is super Node? What is the difference between Super Mesh \& Mesh?\droppoints
+\part[2] \color{red}If you want to put two or more figures side by side then you can use the latex minipage environment.\color{black} What is super Node? What is the difference between Super Mesh \& Mesh?
 
 \begin{solution}
 
 \end{solution}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\part[$4$]Using nodal analysis, determine the potential across the $4~\unit{\Omega}$ resistor in Fig.~\ref{fig:ckt-nodal-analysis} \droppoints
+\part[4]Using nodal analysis, determine the potential across the $4~\unit{\Omega}$ resistor in Fig.~\ref{fig:ckt-nodal-analysis} 
 
 \begin{figure}[H]
 \centering
@@ -18,7 +18,8 @@
 % First figure
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\begin{tikzpicture}[scale=1.0]
+\scalebox{0.7}{
+\begin{tikzpicture}
 % Paths, nodes and wires:
 	\draw (4, 4) to[american resistor, l_={$2~\Omega$}, label distance=0.02cm] (7, 4);
 	\draw (7, 4) to[american resistor, l_={$2~\Omega$}, label distance=0.02cm] (10, 4);
@@ -36,6 +37,7 @@
 	\draw node[ground] at (7, 1) {};
 	\draw node[ground] at (7, 1) {};
 \end{tikzpicture}
+}
 \caption{}
 \label{fig:ckt-nodal-analysis}
 \end{minipage}
@@ -45,7 +47,8 @@
 % Second figure
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\begin{tikzpicture}[scale=1.0]
+\scalebox{0.7}{
+\begin{tikzpicture}
 
 % Paths, nodes, and wires:
 	\draw (5, 7) to[american resistor, l={$2~\Omega$}, label distance=0.02cm] (5, 4);
@@ -71,6 +74,7 @@
 	\draw[->] (6.5, 6) arc[start angle=120, end angle=-150, radius=0.5]; % i2 loop arrow
 	\draw[->] (6.5, 3) arc[start angle=120, end angle=-150, radius=0.5]; % i3 loop arrow
 \end{tikzpicture}
+}
 
 
 
@@ -85,7 +89,7 @@
 
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\part[$4$]Use mess analysis to find currents and voltage $v_o$ in the circuit of Fig.~\ref{fig:ckt-mesh-analysis} \droppoints
+\part[4]Use mess analysis to find currents and voltage $v_o$ in the circuit of Fig.~\ref{fig:ckt-mesh-analysis}
 	
 \begin{solution}
 

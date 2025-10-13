@@ -3,7 +3,7 @@
 \LoadClass[legalpaper,11pt]{exam}
 
 %\RequirePackage[margin = 2cm]{geometry}
-\RequirePackage[top=0.8cm, bottom=1.6cm, left=2cm, right=2cm]{geometry}
+\RequirePackage[top=0.8cm, bottom=1.6cm, left=1in, right= 1in]{geometry}
 
 
 
