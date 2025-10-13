@@ -1,16 +1,16 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{final_exam_sust}
-\LoadClass[legalpaper,11pt]{exam}
+\LoadClass[legalpaper,11pt,addpoints]{exam} % addpoints is required
 
 %\RequirePackage[margin = 2cm]{geometry}
-\RequirePackage[top=0.8cm, bottom=1.6cm, left=1in, right= 1in]{geometry}
+\RequirePackage[top=0.5in, bottom=1.6cm, left=1in, right= 1in]{geometry}
 
 
 
 
 
 \RequirePackage{advdate}
-
+\RequirePackage{verbatim}
 \RequirePackage[latin1]{inputenc}
 \RequirePackage{tikz}
 \RequirePackage{float}
@@ -63,9 +63,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\footer{\tiny{}}{\tiny{\examdate}}{\tiny{Page \thepage}}
-\footer{\textit{\tiny {}}}{\textit{\tiny \examdate}}{\textit{\tiny Page \thepage}}
 
+\footer{\textit{\tiny {EEE,~SUST}}}{\textit{\tiny \examdate}}{\textit{\tiny Page \thepage}}
 
 
 \usetikzlibrary{decorations.pathreplacing}
