@@ -61,10 +61,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\footer{\textit{\tiny {EEE,~SUST}}}{\textit{\tiny \examdate}}{\textit{\tiny Page \thepage}}
+\footer{\textit{\tiny {\deptNameShort{},~\institutionNameShort{}}}}{\textit{\tiny \examDate{}}}{\textit{\tiny Page \thepage}}
 
 
 \usetikzlibrary{decorations.pathreplacing}
@@ -79,3 +76,13 @@
 % Define an inline subparts environment
 \newlist{inlinesubparts}{enumerate*}{1}
 \setlist[inlinesubparts]{label=(\roman*), itemjoin={{, }}, itemjoin*={{, and }}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% About displaying the marks
+% Show points in right margin
+\pointsinrightmargin
+\pointname{}
+\pointformat{\thepoints}
+
