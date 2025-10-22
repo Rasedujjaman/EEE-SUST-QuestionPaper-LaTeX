@@ -1,112 +1,48 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%PART-B(Question#05-->
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%  Question#05  %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+  Put all the topics for this question.
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \question 
-\begin{parts} 	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
-\part[4]\color{red} If you want the subparts of the question to be appeared inline the use the command \verb|\begin{inlinesubparts} \item, \item, etc.---\end{inlinesubparts}|. \color{black} As for example: For the circuit in Fig.~\ref{fig:ckt-inductor-acanalysis}, 
-	 $i(t) = 4(2-e^{-10t})~\si{\milli\ampere}$. If $i_2(t) = \SI{-1}{\milli\ampere}$, Find:
-			
-\begin{inlinesubparts}
-\item  $i_1(t)$
-\item  $v(t),~v_1(t)$ and $v_2(t)$
-\item  $i_1(t)$ and $i_2(t)$.
-\end{inlinesubparts}
-		
-		
-\begin{figure}[H]
-\centering
+\begin{parts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part[2] \color{red} Using the command \verb|\ce{..}| you can typeset the chemical formula and equations. \color{blue} As for example: \color{black}Write down whether the given chemical formulas are organic or inorganic.
 
-\begin{tikzpicture}
-	% Paths, nodes, and wires:
-	\draw (8.99, 3) to[cute inductor, l={$12~H$}, label distance=0.02cm] (8.99, 1);
-	\draw (7, 3) to[cute inductor, l_={$4~H$}, label distance=0.02cm] (7, 1);
-	\draw (5, 3) to[cute inductor, l={$2~H$}, label distance=0.02cm] (7, 3);
-	\draw (5, 3) -- (4, 3);
-	\draw (8.99, 1) -| (4, 1);
-	\draw (7, 3) -| (8.99, 3);
-	\draw node[ocirc] at (4, 3) {};
-	\draw node[ocirc] at (4, 1) {};
+\begin{itemize}
+	\item Water: \verb|\ce{H2O}|, \ce{H2O}
+	\item Benzene: \verb|\ce{C6H6}|, \ce{C6H6}
+	\item Hydrogen peroxide: \verb|\ce{H2O2}|, \ce{H2O2}
+	\item Acetic acid: \verb|\ce{C2H4O2}|, \ce{C2H4O2}
+	\item Glucose: \verb|\ce{C6H12O6}|, \ce{C6H12O6}
+\end{itemize}
 
-	% Shorter current arrows with labels
-	\draw[->, very thin] (4.2, 3.15) --++ (0.4, 0) node[midway, above] {\scriptsize $i$};  % Current for 2H inductor
-	\draw[->, very thin] (7.3, 2.9) --++ (0, -0.4) node[anchor=south west] {\scriptsize $i_1$}; % Current for 4H inductor (shifted downward)
-	\draw[->, very thin] (9.3, 2.9) --++ (0, -0.4) node[anchor=south west] {\scriptsize $i_2$}; % Current for 12H inductor (shifted downward)
+\begin{solution}
 
-	% Voltage label for the 12mH inductor with increased spacing
-	\node at (8, 1.9) [align=center] {\textbf{+} \\[0.2cm] $v_2$ \\[0.2cm] \textbf{-}};
-    % Voltage label for at the input terminal
-	\node at (4, 1.9) [align=center] {\textbf{+} \\[0.2cm] $v$ \\[0.2cm] \textbf{-}};
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\bdpart[2+2] \color{red}The chemical equation can also be written using the command \verb|\ce{}|. \color{blue}As for example: \color{black} Explain the following two chemical equations.
 
-    \node at (5.9, 2.6) { \textbf{+~~$v_1$~~-} };
-
-\end{tikzpicture}
-\caption{}
-\label{fig:ckt-inductor-acanalysis}
-\end{figure}
+\begin{itemize}
+\item \verb|\ce{2H2 + O2 -> 2H2O}| typesets \ce{2H2 + O2 -> 2H2O}
+\item \verb|\ce{CO2 + C -> 2 CO}| typesets \ce{CO2 + C -> 2 CO}
+\end{itemize}
 
 
 \begin{solution}
 
 \end{solution}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\part[3]Find $i_x$ in the circuit of Fig.~\ref{fig:ckt-nodal-ac-analysis} using nodal analysis.
-		
-		
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
-	% Paths, nodes, and wires:
-	\draw (3, 3) to[american resistor, l={$10~\Omega$}, label distance=0.02cm] (5, 3);
-	\draw (5, 3) to[cute inductor, l={$1~H$}, label distance=0.02cm] (7, 3);
-	\draw (8.99, 3) to[cute inductor, l={$0.5~H$}, label distance=0.02cm] (8.99, 1);
-	\draw (7, 1) to[american controlled current source, l_={$2i_x$}, label distance=0.02cm, mirror] (7, 3);
-	\draw (5, 3) to[capacitor, l={$0.1~F$}, label distance=0.02cm] (5, 1);
-	\draw (3, 3) to[american voltage source, l_={$20\cos 4t~V$}, label distance=0.02cm] (3, 1);
-	\draw node[ground] at (7, 1) {};
-	\draw (7, 3) -| (8.99, 3);
-	\draw (3, 1) -| (8.99, 1);
-
-	% Shifted current arrow and label (left and down)
-	\draw[<-, very thin] (4.85, 2.3) --++ (0, 0.4) node[midway, left] {\scriptsize $i_x$};
-
-\end{tikzpicture}
-
-
-
-\caption{}
-\label{fig:ckt-nodal-ac-analysis}
-\end{figure}
-
-\begin{solution}
-
-\end{solution}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\bdpart[1+1+1]  \color{red} If you want the marks to be displayed as \(1+1+1\), use the command \verb|\bdpart[1+1+1]| instead of the regular \verb|\part[]| command. \color{black} As for example: Determine the currents $I_1$, $I_2$ and $I_{D2}$ for the network of Fig.~\ref{fig:ckt-diode-dcanalysis}.
-		
-\begin{figure}[H]
-\centering
-
-\begin{tikzpicture}
-	% Paths, nodes, and wires:
-	\draw (5, 6) to[empty diode, l_={$D1$}, label distance=0.02cm] 
-	    node[above left=0.3cm] {\small Si} (8, 6); % Shifted "Si" label to the left of D1
-	    
-	\draw (8, 6) to[empty diode, l={$D2$}, i>={$i_{D2}$}, label distance=0.02cm] 
-	    node[above left=0.3cm] {\small Si} (8, 4); % Shifted "Si" label to the left of D2
-	
-	\draw (8, 6) to[american resistor, l={$R_1$}, i>={$i_1$}, label distance=0.02cm] (11, 6);
-	\draw (8, 4) to[american resistor, l_={$R_2$}, i>={$i_2$}, label distance=0.02cm] (5, 4);
-	\draw (5, 6) to[battery1, l_={$E=20~V$}, label distance=0.02cm] (5, 4);
-	\draw (8, 4) -| (11, 6);
-\end{tikzpicture}
-\caption{}
-\label{fig:ckt-diode-dcanalysis}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bdpart[1+4]\color{red} Drawing a molecule consists mainly of connecting groups of atoms with lines. Simple linear formulae can be easily drawn using the chemfig package and using the command \verb|\chemfig{*6((=O)-N(-)-(*5(-N=-N(-)-))=-(=O)-N(-)-)}|, \color{blue}as shown in the following example: \color{black} Identify the given chemical formula.
+\[
+\chemfig{*6((=O)-N(-)-(*5(-N=-N(-)-))=-(=O)-N(-)-)}
+\]
 
 
 \begin{solution}
 
 \end{solution}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%				
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{parts}
